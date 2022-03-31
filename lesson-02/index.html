@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8 />
+  <title>Lesson 02 practice template</title>
+  <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
+  <style>
+    /* CSS style rules go here! */
+  </style>
+</head>
+
+<body>
+  
+  <script>
+      console.log("hello map"); // posting hello map in console log
+      console.log(5);  // output is 5, a numeric type, rather than string type
+      console.log(true); // testing boolean type true
+      console.log(false); // testing boolean type false
+      console.log(5 + 8); // testing addition in console
+      console.log(5 < 8); // evaluates to true
+      console.log(5 > 8); // evaluates to false
+      console.log(5 == 8); // evaluates to false
+      console.log(5 != 8); // evaluates to true
+      console.log("My name is " + "Vance Alligator"); // testing operators on string types
+      console.log(5 + "8"); // output is 58; showing distinction between string and numerical values
+      console.log(5 + "hello map"); // output is a string value "5hello map"
+      console.log(5 < "8"); // output is true
+      console.log(5 > "8"); // output is false
+      console.log(5 == "5"); // output is true!?!?!; testing conversion to numerical
+      console.log(5 == "5"); // output is true
+      console.log(5 === "5"); // output is false
+      console.log(1 < 2 && 2 < 3); // output is true because 1 < 2 and 2 < 3
+      console.log(1 < 2 && 2 > 3); // output is false because the second statement (2 >3) is not true
+      console.log(1 < 2 || 2 > 3); // output is true because only one of the statements need be true
+      console.log(!true); // output is false
+      console.log(1 != 2); // output is true because 1 is NOT equal to 2
+      console.log(1 != 1); // output is false because 1 is equal to 1
+
+
+      var total1 = 15 + 20;  // result of the expression is assigned to variable (35)
+      console.log(total1);
+
+      var value1 = 30;
+      var value2 = 60;
+      var total2 = value1 + value2;  // expression references variables and assigned (90)
+      console.log(total2);
+
+      var average = total1/total2; // avg is (.388)
+      console.log(average);
+
+      var year = 2015;
+      console.log(year);  // year references a number value
+      var year = "fabulous!";
+      console.log(year);  // year now references a string value
+
+      var cityPop = 308428; //asigning cityPop
+      console.log("The population of Lexington is ", cityPop); //references cityPop figure
+
+      var city = "Boulder",
+      state =  "Colorado",
+      population = 103166,
+      zipCodes = [80301, 80303, 80305, 80307];
+
+      var cities = ["Frankfort", "Louisville", "Lexington"];
+      console.log(cities);
+
+      var populations = [25527, 756832, 308428];
+      console.log(populations);
+
+      var cityData = [
+        ["Frankfort", "Louisville", "Lexington"], // array of strings
+        [25527, 756832, 308428], // array of numbers (populations)
+        [true, false, false] // array of booleans
+      ];
+      console.log(cityData);
+
+      var cities = ["Frankfort", "Louisville", "Lexington"];
+      console.log(cities[0]); // outputs the String "Frankfort"
+
+      var cities = ["Frankfort", "Louisville", "Lexington"];
+      console.log(cities[0]); // outputs the String "Frankfort"
+      console.log(cities[1]); // outputs the String "Louisville"
+      console.log(cities[2]); // outputs the String "Lexington"
+      console.log(cities[3]); // outputs undefined data type
+
+      var twoDArray = [
+        ["Frankfort", "Louisville", "Lexington"],
+        [25527, 756832, 308428],
+        [true, false, false]
+      ];
+      console.log(twoDArray[0][2]); // output will be Lexington
+      console.log(twoDArray[2][1]); // output will be false
+
+      var years = [2010, 2011, 2022, 2013, 2014,2015];
+      console.log(years);
+      years[2] = 2012;  // accessing a value and reassigning it
+      console.log(years); // we can see that the array has been updated!
+
+      var counties = [];
+      console.log(counties); // output is an empty array
+      counties[0] = "Adair";
+      console.log(counties); // output is a single item array ["Adair"]
+      counties[1] = "Allen";
+      console.log(counties); // output is now ["Adair", "Allen"]
+      counties[5] = "Anderson";
+      console.log(counties); // output is now ["Adair", "Allen", empty x 3, "Anderson"]
+
+      var temp = 33,
+      report = undefined; // first assign report an undefined value
+      if(temp <= 32) {
+      report = "The temperature is freezing.";
+      } else if(temp > 32) {
+      report = "The temperature is above freezing."
+      } else {
+      report = "Not sure how you measure temperature."
+      }
+      console.log(report)
+
+      var costume = "my 🐩 needs a costume"
+      var space = " "
+      var period = "."
+      var and = "and"
+      // Build string without altering the original data
+      var newString = (31 - 13) + space + "days until Halloween" + space + and + space + costume + period
+      // Alternative version that changes the string literal
+      var altVersion = (31 - 13) + " days until Halloween and " + costume + "."
+      console.log(newString)
+
+      var costume = "my 🐩 needs a costume"
+      var newString = `${(31 - 13)} days until Halloween and ${costume}!`
+      console.log(newString)
+
+      var word = "days until Halloween"
+      var day = new Date()
+      console.log(day)
+      if (day.getMonth() == 9) {
+      var daysUntil = 31 - day.getDate();
+      } else {
+      var daysUntil = "not October! Think of a different holiday! Too many"
+      }
+      var newString = `\${Scary syntax} & backticks \`\` tell us it's ${daysUntil} ${word}.`
+      console.log(newString) //testing example syntax
+      
+  </script>
+
+</body>
+
+</html>
